@@ -13,4 +13,12 @@ public class Customer extends Person
         this.customerNumber = customerNumber;
         this.mailingList = mailingList;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "" +
+                ", customerNumber = '" + customerNumber + '\'' +
+                ", mailingList = " + mailingList +
+                '}';
+    }
 }
